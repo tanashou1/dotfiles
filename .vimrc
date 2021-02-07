@@ -1,4 +1,3 @@
-
 set noswapfile
 
 set relativenumber
@@ -8,7 +7,13 @@ set cursorline
 nnoremap j gj
 nnoremap gj j
 
-inoremap <Nul> <C-Space>
+nnoremap k gk
+nnoremap kj j
+
+nnoremap L $
+nnoremap H ^
+
+imap <Nul> <C-Space>
 
 inoremap <C-Space> <Esc>
 
