@@ -125,3 +125,5 @@ bind '"\C-p": history-search-backward'
 source /opt/OpenFOAM/OpenFOAM-v2006/etc/bashrc
 
 alias paraview='/mnt/c/Program\ Files/ParaView\ 5.9.0-RC4-Windows-Python3.8-msvc2017-64bit/bin/paraview.exe'
+
+shopt -s globstar
