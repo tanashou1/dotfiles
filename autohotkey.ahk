@@ -52,3 +52,5 @@ vkA0 & u::send, ^{y}
 ; #IfWinActive,ahk_exe chrome.exe  ;Chrome.exeがアクティブな時にだけ
 ~vk1D & u::send,{Blind}{Up 10}
 #IfWinActive
+vkF3::Send, {Blind}{Esc}
+vkF4::Send, {Blind}{Esc}
