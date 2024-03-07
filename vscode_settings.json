@@ -1,0 +1,359 @@
+{
+  "debug.inlineValues": true,
+  "files.eol": "\n",
+  "editor.minimap.enabled": false,
+  "editor.lineNumbers": "relative",
+  "editor.bracketPairColorization.enabled": false,
+  "vim.visualstar": true,
+  // easymotion関連
+  "vim.hlsearch": false,
+  "vim.leader": "<space>",
+  "vim.easymotion": true,
+  "vim.easymotionKeys": "qwertyuiopasdfghjklzxcvbnm",
+  "vim.highlightedyank.enable": true,
+  "vim.visualModeKeyBindings": [
+    {
+      "before": ["ctrl+j"],
+      "after": ["g", "b"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<Esc>"],
+      "commands": [":nohl"]
+    },
+    {
+      "before": ["j"],
+      "after": ["g", "j"]
+    },
+    {
+      "before": ["k"],
+      "after": ["g", "k"]
+    },
+    {
+      "before": ["g", "j"],
+      "after": ["j"]
+    },
+    {
+      "before": ["g", "k"],
+      "after": ["k"]
+    },
+    {
+      "before": ["H"],
+      "after": ["^"]
+    },
+    {
+      "before": ["L"],
+      "after": ["$"]
+    },
+    {
+      "before": ["J"],
+      "after": ["ctrl+d"]
+    },
+    // {
+    //     "before": ["V","J"],
+    //     "after": ["V","ctrl+d"]
+    // },
+    {
+      "before": ["K"],
+      "after": ["ctrl+u"]
+    },
+    // {
+    //     "before": ["v","K"],
+    //     "after": ["ctrl+u"]
+    // },
+    {
+      "before": ["U"],
+      "after": ["ctrl+r"]
+    },
+    {
+      "before": ["ctrl+j"],
+      "after": ["g", "b"]
+    }
+  ],
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "python.languageServer": "Pylance",
+  "python.analysis.typeCheckingMode": "basic",
+  "python.linting.pylintEnabled": false,
+  "python.linting.flake8Enabled": true,
+  "python.linting.mypyEnabled": true,
+  //"files.autoSave": "afterDelay",
+  //"files.autoSaveDelay": 1000,
+  "python.linting.lintOnSave": true,
+  "python.linting.flake8Args": ["--ignore=E203, W503, W504, E501, E402"],
+  // "python.formatting.autopep8Args": ["--aggressive"],
+  "python.formatting.blackPath": "black",
+  "python.formatting.provider": "black",
+  "python.envFile": "${workspaceFolder}/.env",
+  "python.venvPath": "{$workspaceFolder}/.venv",
+  "python.autoComplete.extraPaths": ["${workspaceFolder}"],
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/*/**": true,
+    "**/.hg/store/**": true,
+    "**/.venv/**": true
+  },
+  "autoDocstring.docstringFormat": "google",
+  "cSpell.userWords": [
+    "aitai",
+    "asdict",
+    "Assi",
+    "astype",
+    "Autocommit",
+    "banchi",
+    "bokeh",
+    "Bson",
+    "chiban",
+    "choji",
+    "chome",
+    "chromedriver",
+    "chrono",
+    "cmap",
+    "Cominity",
+    "confy",
+    "dataclass",
+    "Datadog",
+    "dimacs",
+    "districting",
+    "drawio",
+    "dropna",
+    "dtype",
+    "eazy",
+    "enfree",
+    "EPSG",
+    "fillna",
+    "gantt",
+    "gateria",
+    "gunicorn",
+    "Gurobi",
+    "hhmm",
+    "Homberger",
+    "iloc",
+    "importlib",
+    "inodes",
+    "inplace",
+    "iproduct",
+    "ipyleaflet",
+    "ipywidgets",
+    "isdigit",
+    "isort",
+    "iterrows",
+    "itertools",
+    "itransform",
+    "jikoku",
+    "JUSHO",
+    "koban",
+    "kruskal",
+    "kuiki",
+    "kuikis",
+    "kuroneko",
+    "lowlink",
+    "marp",
+    "matplotlib",
+    "Meiryo",
+    "mochidashi",
+    "MOCHIMODORI",
+    "multicenter",
+    "nakayama",
+    "ndarray",
+    "Neco",
+    "necoassi",
+    "neko",
+    "nekoashi",
+    "nekopos",
+    "nekopost",
+    "nekoposu",
+    "Nimotsu",
+    "numpy",
+    "oaza",
+    "odbc",
+    "openpyxl",
+    "pipenv",
+    "Pipfile",
+    "PPHAIKAN",
+    "ppid",
+    "prefs",
+    "pymongo",
+    "pyplot",
+    "pyproj",
+    "PYTHONPATH",
+    "QGIS",
+    "Qiita",
+    "reindex",
+    "rstest",
+    "shikuchoson",
+    "Shiten",
+    "Shitens",
+    "Shosai",
+    "shubetsu",
+    "shuhai",
+    "shukan",
+    "SJIS",
+    "sklearn",
+    "sqldb",
+    "structs",
+    "taiou",
+    "timeframe",
+    "Timeframes",
+    "totalization",
+    "tqdm",
+    "trunc",
+    "upsert",
+    "venv",
+    "VRPTW",
+    "warshall",
+    "webdriver",
+    "werkzeug",
+    "xticklabels",
+    "yamato",
+    "yukyu",
+    "zenrin",
+    "zhao"
+  ],
+  // java
+  "java.configuration.checkProjectSettingsExclusions": false,
+  "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx1G -Xms100m -javaagent:\"c:\\Users\\0AH120004\\.vscode\\extensions\\gabrielbb.vscode-lombok-1.0.1\\server\\lombok.jar\"",
+  "java.configuration.runtimes": [
+    {
+      "default": true,
+      "name": "JavaSE-11",
+      "path": "C:\\Program Files\\Microsoft\\jdk-11.0.13.8-hotspot"
+    }
+  ],
+  "java.jdt.ls.java.home": "C:\\Program Files\\Microsoft\\jdk-11.0.13.8-hotspot",
+  //"todo.colors.done": "#808000"
+  "scrolloff.scrolloff": 8,
+  "markdown-toc.depthFrom": 1,
+  "markdown-toc.depthTo": 6,
+  "python.analysis.extraPaths": ["${workspaceFolder}"],
+  "files.autoSave": "afterDelay",
+  "jupyter.askForKernelRestart": false,
+  "typescript.suggest.paths": false,
+  "markdown.marp.chromePath": "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe",
+  "editor.largeFileOptimizations": false,
+  "terminal.integrated.allowChords": false,
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter.notebook.ipynb",
+    "*.xlsx": "default"
+  },
+  "terminal.integrated.commandsToSkipShell": ["language-julia.interrupt"],
+  "julia.enableTelemetry": false,
+  "julia.enableCrashReporter": false,
+  "files.trimTrailingWhitespace": true,
+  "[markdown]": {
+    // markdownは 行末の半角スペース2つで改行なので、消さないようにする
+    "files.trimTrailingWhitespace": false,
+    //  スペースは ・ で表示される
+    "editor.renderWhitespace": "boundary",
+    "editor.tabSize": 2
+  },
+  "[tsv]": {
+    "editor.insertSpaces": false
+  },
+  "editor.fontFamily": "Ricty Diminished",
+  "editor.fontSize": 17,
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "editor.accessibilitySupport": "off",
+  "jupyter.widgetScriptSources": ["jsdelivr.com", "unpkg.com"],
+  "git.confirmSync": false,
+  "git.autorefresh": true,
+  "workbench.startupEditor": "none",
+  "rust-analyzer.checkOnSave.command": "clippy",
+  // "rust-analyzer.server.extraEnv": {"RUSTUP_TOOLCHAIN": "stable"},
+  // "rust-analyzer.server.path": "/home/tanashou1/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/rust-analyzer",
+  "rust-analyzer.procMacro.enable": true,
+  "rust-analyzer.procMacro.attributes.enable": true,
+  // "rust-analyzer.enableEnhancedTyping" : false,
+  // "rust-analyzer.experimental.procAttrMacros": true,
+  "mssql.connections": [
+    {
+      "server": "{{put-server-name-here}}",
+      "database": "{{put-database-name-here}}",
+      "user": "{{put-username-here}}",
+      "password": ""
+    },
+    {
+      "server": "(localdb)\\building_point_data",
+      "database": "",
+      "authenticationType": "Integrated",
+      "password": ""
+    }
+  ],
+  "markdown-preview-enhanced.enableExtendedTableSyntax": true,
+  "files.autoGuessEncoding": true,
+  "editor.unicodeHighlight.invisibleCharacters": false,
+  "editor.unicodeHighlight.ambiguousCharacters": false,
+  "remote.SSH.remotePlatform": {
+    "course_design": "linux",
+    "my_course_design": "linux",
+    "koyama_course_design": "linux"
+  },
+  "rust-analyzer.inlayHints.enable": true,
+  "terminal.integrated.fontFamily": "HackGenNerd Console",
+  "terminal.integrated.fontSize": 18,
+  "azure.cloud": "AzureCloud",
+  "pasteImage.forceUnixStyleSeparator": false,
+  "pasteImage.basePath": "${currentFileDir}",
+  "rust-analyzer.cargo.buildScripts.enable": true,
+  "githubIssues.queries": [
+    {
+      "label": "My Issues",
+      "query": "state:open repo:${owner}/${repository} sort:created-desc assignee:@me"
+    },
+    {
+      "label": "Recent Issues",
+      "query": "state:open repo:${owner}/${repository} sort:updated-desc"
+    }
+  ],
+  "githubIssues.issueBranchTitle": "issue${issueNumber}",
+  "githubPullRequests.remotes": ["origin"],
+  "workbench.activityBar.visible": true,
+  "errorLens.enabledDiagnosticLevels": ["warning", "info", "error"],
+  "errorLens.enabled": false,
+  "extensions.autoUpdate": false,
+  "markdown.marp.enableHtml": true,
+  "markdown-image.base.fileNameFormat": "${timestamp}",
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "python.analysis.typeCheckingMode": "basic",
+  "editor.inlayHints.enabled": "onUnlessPressed",
+  "workbench.colorCustomizations": {
+    "editor.lineHighlightBackground": "#1073cf2d",
+    "editor.lineHighlightBorder": "#9fced11f"
+  },
+  "editor.wordWrap": "off",
+  "diffEditor.wordWrap": "off",
+  "editor.guides.indentation": false,
+  "editor.guides.bracketPairs": false,
+  "notebook.lineNumbers": "on",
+  "editor.stickyScroll.enabled": false,
+  "jupyter.interactiveWindow.creationMode": "perFile",
+  "lldb.suppressUpdateNotifications": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "markdown-mermaid.darkModeTheme": "base",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2,
+    "editor.formatOnSave": true
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2,
+    "editor.formatOnSave": true
+  },
+  "diffEditor.ignoreTrimWhitespace": false,
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.python"
+  },
+  "terminal.integrated.shellIntegration.enabled": false,
+  "hediet.vscode-drawio.theme": "sketch",
+  "githubPullRequests.pullBranch": "never"
+}
